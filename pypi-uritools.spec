@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-uritools
-Version  : 4.0.1
-Release  : 1
-URL      : https://files.pythonhosted.org/packages/4d/8b/f49813253c29c49a3767256cbe94a2450d3377953fedcd8e62be200c0ba0/uritools-4.0.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/4d/8b/f49813253c29c49a3767256cbe94a2450d3377953fedcd8e62be200c0ba0/uritools-4.0.1.tar.gz
+Version  : 4.0.2
+Release  : 2
+URL      : https://files.pythonhosted.org/packages/44/71/2712397a459ef0c960141f1f9fdf5a6b48052c521644c7154c508d976373/uritools-4.0.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/44/71/2712397a459ef0c960141f1f9fdf5a6b48052c521644c7154c508d976373/uritools-4.0.2.tar.gz
 Summary  : URI parsing, classification and composition
 Group    : Development/Tools
 License  : MIT
@@ -58,10 +58,10 @@ python3 components for the pypi-uritools package.
 
 
 %prep
-%setup -q -n uritools-4.0.1
-cd %{_builddir}/uritools-4.0.1
+%setup -q -n uritools-4.0.2
+cd %{_builddir}/uritools-4.0.2
 pushd ..
-cp -a uritools-4.0.1 buildavx2
+cp -a uritools-4.0.2 buildavx2
 popd
 
 %build
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683224052
+export SOURCE_DATE_EPOCH=1693442831
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
